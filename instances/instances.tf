@@ -323,7 +323,7 @@ resource "aws_sns_topic" "webapp_production_autoscaling_alert_topic" {
 }
 
 resource "aws_sns_topic_subscription" "webapp_production_autoscaling_sms_subscription" {
-  endpoint  = "+905321613889"
+  endpoint  = "PHONE_NUMBER"
   protocol  = "sms"
   topic_arn = "${aws_sns_topic.webapp_production_autoscaling_alert_topic.arn}"
 }
